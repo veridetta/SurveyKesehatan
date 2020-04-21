@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_6sdp"
+    app:cardMaxElevation="@dimen/_6sdp"
+    app:cardElevation="@dimen/_6sdp"
+
+    android:layout_margin="@dimen/_6sdp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:padding="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/bg_gradient"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/detail_penyakit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:text="Nama penyakit nanti disini"
+                android:textColor="@color/grey_400"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_6sdp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/list_blue"
+                    android:backgroundTintMode="multiply"
+                    android:backgroundTint="@color/blue_700"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:id="@+id/detail_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Status : terdiagnosa"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/surat_red"
+                    android:backgroundTintMode="multiply"
+                    android:textSize="@dimen/_14sdp"
+                    android:backgroundTint="@color/red_500"/>
+                <TextView
+                    android:id="@+id/detail_surat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Surat dokter : Ada"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detail_tanggal"
+                android:textSize="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Survey telah dilakukan pada 14-12-2019 22:40"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
